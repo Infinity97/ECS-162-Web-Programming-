@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bookclub.css">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <title>Book Club</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="bookclub">
+          <h3>BOOK CLUB</h3>
+      </div>
+      <div class="Subheading ">
+          <p>Search for a book by... </p>
+      </div>
+  <main>
+     <div class="container ">
+          <div class="textbox ">
+            <div class="author ">
+                <p class ="placeholders ">Author</p>
+                <input id="author" type="text" class="box " name="author" placeholder="ex William Shakespeare">
+            </div>
+            <div class="title ">
+                <p class ="placeholders ">Title</p>
+                <input id="title" value = "A Wrinkle In Time" type="text" class="box " name="title" placeholder="ex Romeo and Juliet">
+            </div>
+            <div class="isbn ">
+                <p class ="placeholders ">ISBN</p>
+                <input id="isbn" type="text" class ="box " name="isbn" placeholder="ex 000-0-00-000000-0">
+            </div>
+          </div>
+          <div class="search">
+              <button type="search" onclick = "getBooks()" class ="box " id="searchbox" value = "search">Search</button>
+          </div>
+        </div>
+    </div>
+    <div class= "bookDisplay" id = "displayBook">
+
+   </div>
+   <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  </main>
+<script src="bookclub.js"> </script>
+    </body>
+</html>

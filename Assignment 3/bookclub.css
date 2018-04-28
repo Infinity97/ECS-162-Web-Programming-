@@ -1,0 +1,205 @@
+@media (min-width:450px) {
+    /*Landing Page*/
+    body{
+      font-family: 'Roboto',sans-serif;
+    }
+    .header.landingpage{
+      margin-top: 20px;
+    }
+    .Subheading.landingpage{
+      margin-left: 50px;
+    }
+    .bookclub.landingpage{
+      color: #4A73FF;
+      font-size: 40px;
+      text-align: center;
+    }
+    .container.landingpage{
+      display: flex;
+      flex-direction: column;
+      color: #4a73ff;
+      font-weight: 300;
+    }
+    .textbox.landingpage{
+      display: flex;
+      flex-direction: column;
+    }
+    .author.landingpage, .title.landingpage, .isbn.landingpage{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: -5%;
+    }
+    .placeholders.landingpage{
+      margin-left: 50px;
+    }
+    .or.landingpage{
+      font-weight: bold;
+      text-align: center;
+      padding-top: 2px;
+    }
+    .box.landingpage{
+    border: 3px solid #4a73ff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 300px;
+    height: 20px;
+    font-size: 20px;
+    margin:auto;
+    width: 70%;
+    }
+    #searchbox.landingpage{
+      display: flex;
+      background-color: #4a73ff;
+      border: 3px solid #4a73ff;
+      margin-top:70px;
+
+      border-radius: 10px;
+      color: white;
+      font-weight: 300;
+      cursor: pointer;
+    }
+    /*Normal View*/
+}
+@media(min-width:950px) {
+
+  body{
+    font-family: 'Roboto',sans-serif;
+    background-color: #EDEDED;
+    margin: -5px;
+  }
+  .header{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    background-color: white;
+    box-shadow: 5px 2px 4px #888888;
+  }
+  .Subheading{
+    display: none;
+  }
+  .bookclub{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    color: #4A73FF;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    flex: 2 1 auto;
+    color: #4a73ff;
+    font-weight: 300;
+    margin-bottom: -30px;
+  }
+  .textbox{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+  }
+  .author, .title, .isbn{
+    display: flex;
+    flex-direction:column;
+  }
+  .placeholders{
+    margin-left: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+  }
+  .or{
+    display: none;
+  }
+  .box{
+    display: flex;
+    border: 2px solid #4a73ff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 300px;
+    height: 20px;
+    font-size: 20px;
+    width: 80%;
+  }
+  #searchbox{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 40px;
+    background-color: #4a73ff;
+    border: 3px solid #4a73ff;
+    border-radius: 10px;
+    padding: 15px 100px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    width: 40%;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .search{
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .tiles{
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 auto;
+    height: 20%;
+    width: 20%;
+    padding : 20px;
+  }
+  p{
+    width: 250px;
+     white-space: nowrap;
+     overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  img{
+    width: 5%;
+    height: 5%;
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  .bookDisplay{
+    display: flex;
+    flex-direction: row;
+    flex:  2 1 auto;
+  }
+  .empty{
+
+  }
+}
