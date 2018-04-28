@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<script>
+function myfunction(imgs) {
+    var a = document.getElementById(imgs.id);
+    var b = document.getElementById('rightish');
+    b.innerHTML = a.innerHTML;
+}
+</script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <title>Exhibition at Manetti Shrem Museum</title>
+    <link rel="stylesheet" href="exhibit.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <body>
+      <div class="header">
+            <div class="title">
+                <h2>WAYNE THIEBAUD</h2>
+                <p class="subheading">Exhibition at Manetti Shrem Museum</p>
+            </div>
+            <div class="nav">
+                <ul>
+                  <li class="selected">HOME <p class="first bar">|</p>
+                  </li>
+                  <li>ABOUT<p class="bar">|</p>
+                  </li>
+                  <li>CONTACT
+                  </li>
+                </ul>
+            </div>
+      </div>
+      <div class="content">
+            <div class="left">
+              <div class="head">
+                <p class = "title1"><b>Open until May 13</b><span class = "forsmall">|</span></p>
+                <p id="subtitle"> free to the public</p>
+                <span class = "forbig">_____</span>
+              </div>
+                <p id ="paragraph">At an extraordinary historical moment,
+                   Wayne Thiebaud proposed a radical new
+                   take on painting, and he did so with a slice of
+                   pie. This exhibition invites viewers to trace
+                   Thiebaud’s emergence as a mature artist
+                   with a singular style. The first exhibition to
+                   explore this formative period, Wayne
+                   Thiebaud | 1958–1968 brings together more
+                   than 60 early paintings gathered from
+                   private collections and museums
+                   throughout the United States.
+                 </p>
+            </div>
+            <div class="right" id ="rightish">
+              <img src="./images/Wind Toys, 1962. oil on canvas.jpg" id="target" class = "first" alt="Wind Toys, 1962. oil on canvas">
+              <p class="caption" id="targetcap"><b class ="caption-bold">Wind Toys</b><span class ="for750"><br>(1962 oil on canvas)</span><span class ="for450">(1962 oil on canvas)</span></p>
+            </div>
+          <div class="gallery">
+            <div class="image-list">
+              <div class = "image"  onclick="myfunction(this);" id="id1">
+                <img src="./images/Wind Toys, 1962. oil on canvas.jpg" class = "first" alt="Wind Toys, 1962. oil on canvas">
+                <p class="caption"><b class ="caption-bold">Wind Toys</b><span class ="for750"><br>(1962 oil on canvas)</span><span class ="for450">(1962 oil on canvas)</span></p>
+              </div>
+              <div class="image" onclick="myfunction(this);" id="id2">
+                <img src="./images/Pancake Breakfast, 2008. oil on canvas.jpg" alt="Pancake Breakfast, 2008. oil on canvas">
+                <p class="caption" id="cap2"><b class ="caption-bold">Pancake Breakfast</b><span class ="for750"><br>(2008 oil on canvas)</span><span class ="for450">(2008 oil on canvas)</span></p>
+              </div>
+            </div>
+            <div class="image-list">
+                <div class="image" onclick="myfunction(this);" id="id3">
+                    <img src="./images/Around the Cake, 1962, oil on canvas.jpg"alt="Around the Cake, 1962, oil on canvas">
+                    <p class = "caption" id="cap3"><b class ="caption-bold">Around the Cake</b><span class ="for750"><br>(1962 oil on canvas)</span><span class ="for450">(1962 oil on canvas)</span></p>
+                </div>
+                <div class="image" onclick="myfunction(this);" id="id4">
+                      <img src="./images/Three Machines, 1963. oil on canvas.jpg" alt="Three Machines, 1963. oil on canvas">
+                      <p class ="caption" id="cap4"><b class ="caption-bold">Three Machines</b><span class ="for750"><br>(1963 oil on canvas)</span><span class ="for450">(1963 oil on canvas)</span></p>
+                </div>
+            </div>
+            <div class="image-list">
+              <div class="image" onclick="myfunction(this);" id="id5">
+                  <img src="./images/Boston Creems, 1962. oil on canvas.jpg" alt="Boston Creems, 1962. oil on canvas" >
+                  <p class = "caption" id ="cap5"><b class ="caption-bold"> Boston Creems</b><span class ="for750"><br>(1962 oil on canvas)</span><span class ="for450">(1962 oil on canvas)</span></p>
+              </div>
+              <div class="image" onclick="myfunction(this);" id="id6">
+                  <img src="./images/Bananas, 1963. Oil on canvas.jpg"class = "last" alt="Bananas, 1963. Oil on canvas">
+                  <p class ="caption" id ="cap6"><b class ="caption-bold">Bananas</b><span class ="for750"><br>(1963 oil on canvas)</span><soan class ="for450">(1963 oil on canvas)</span></p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="footer">
+        <div id="left_footer">
+          <p>Manetti Shrem Museum</p>
+          <p>
+            254 Old Davis Rd<br>
+             Davis, CA 95616<br>
+            (530) 752-8500
+          </p>
+        </div>
+          <div id="right_footer">
+             <p> Hours </p>
+             <p>
+                Closed Monday<br>
+                Open Tuesday–Friday 12 am – 6 pm<br>
+                Open Saturday-Sunday 11 am – 5 pm
+            </p>
+         </div>
+      </div>
+  </body>
+  <script type="text/javascript" src="script.js">
+  </script>
+</html>
